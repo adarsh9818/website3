@@ -7,11 +7,10 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchlabels:
+    matchLabels:
       app: custom
   template: 
     metadata:
-      name: app-deployment
       labels:
         app: custom
     spec:
