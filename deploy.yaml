@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: app-deployment
+  labels:
+    app: custom
+spec:
+  replicas: 2
+  selector:
+    matchlabels:
+      app: custom
+  template: 
+    metadata:
+      name: app-deployment
+      labels:
+        app: custom
+    spec:
+      containers:
+      - name: website3
+        image: adarsh9818/website3
+        ports: 
+        - containerPort: 80
+
