@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: website3
-        image: adarsh9818/website3
+        image: adarsh88/website3
         ports: 
         - containerPort: 80
 
